@@ -7,7 +7,7 @@ Whether you are using a Lenovo Legion Go, ASUS ROG Ally, or a custom Windows HTP
 ## ⚠️ Prerequisites
 
 Before installing, ensure your setup meets the following requirements:
-1. **Windows 10 or Windows 11** with the Xbox Gaming Home / FSE feature enabled.
+1. **Windows 11** with the Xbox Gaming Home / FSE feature enabled.
 2. **Playnite** must be installed in its default user directory. The launcher explicitly looks for the executable here:
    `%LOCALAPPDATA%\Playnite\Playnite.FullscreenApp.exe`
 
