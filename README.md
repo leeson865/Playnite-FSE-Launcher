@@ -2,7 +2,7 @@
 
 A native Windows 11 launcher that bypasses Xbox Full Screen Experience (FSE) restrictions to seamlessly replace the default Xbox gaming dashboard with **Playnite**.
 
-Whether you are using a Lenovo Legion Go, ASUS ROG Ally, or a custom Windows HTPC, this tool allows you to map your hardware's "Console/Xbox" button directly to Playnite without Windows burying it in the background.
+Whether you are using a Lenovo Legion Go, ASUS ROG Ally, or a custom Windows HTPC, this tool allows you to map your hardware's FSE Launcher directly to Playnite without Windows burying it in the background, and with no hacky workarounds that require running the Xbox app and terminating the process.
 
 ## ⚠️ Prerequisites
 
