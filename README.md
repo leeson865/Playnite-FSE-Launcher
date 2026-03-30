@@ -17,7 +17,7 @@ Because this tool uses custom system-level capabilities, it is distributed as a 
 
 1. Go to the **[Releases](../../releases)** page and download the latest `PlayniteFSE_v1.0.zip`.
 2. Extract the `.zip` file to a folder on your device.
-3. Open the extracted folder, right-click on the **`Install.ps1`** file, and select **Run with PowerShell**.
+3. Open the extracted folder, right-click on the **`InstallPlayniteFSE.bat`** file, and select **Run as Administrator**.
 4. Windows will ask for administrator permission to install the developer certificate. Type `Y` and hit **Enter** when prompted.
 5. Once the installation script finishes successfully, check your Start menu and you should see Playnite FSE installed.
 6. Open **Windows Settings > Gaming > Full Screen Experience**.
