@@ -38,3 +38,9 @@ To ensure Windows grants the app the necessary foreground focus without suppress
 
 ### 3. The Execution (`Launcher.exe`)
 Once selected in the Windows Settings, the actual execution is incredibly lightweight. The package runs a minimal .NET 4.8 application that simply triggers `Playnite.FullscreenApp.exe` and gracefully exits. Because the initial package holds the correct FSE dashboard capabilities, Playnite inherits that foreground focus and launches flawlessly with zero background overhead.
+
+---
+### Support the Project
+If this launcher made your handheld experience a bit smoother, feel free to buy me a coffee!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/leeson65035)
