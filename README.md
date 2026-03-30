@@ -19,9 +19,10 @@ Because this tool uses custom system-level capabilities, it is distributed as a 
 2. Extract the `.zip` file to a folder on your device.
 3. Open the extracted folder, right-click on the **`InstallPlayniteFSE.bat`** file, and select **Run as Administrator**.
 4. Windows will ask for administrator permission to install the developer certificate. Type `Y` and hit **Enter** when prompted.
-5. Once the installation script finishes successfully, check your Start menu and you should see Playnite FSE installed.
-6. Open **Windows Settings > Gaming > Full Screen Experience**.
-7. Select **Playnite FSE** from the list of available apps (it should be underneath Xbox) to set it as your default!
+5. Windows may warn you about running a script externally. Select `Yes to all` via the command.
+6. Once the installation script finishes successfully, check your Start menu and you should see Playnite FSE installed.
+7. Open **Windows Settings > Gaming > Full Screen Experience**.
+8. Select **Playnite FSE** from the list of available apps (it should be underneath Xbox) to set it as your default!
 
 ## 🛠️ How It Works (The Technical Details)
 
