@@ -19,8 +19,9 @@ Because this tool uses custom system-level capabilities, it is distributed as a 
 2. Extract the `.zip` file to a folder on your device.
 3. Open the extracted folder, right-click on the **`Install.ps1`** file, and select **Run with PowerShell**.
 4. Windows will ask for administrator permission to install the developer certificate. Type `Y` and hit **Enter** when prompted.
-5. Once the installation script finishes successfully, press your controller's Xbox/Home button to open the FSE menu.
-6. Select **Playnite FSE** from the list of available dashboards to set it as your default!
+5. Once the installation script finishes successfully, check your start menu and you should see PlayniteFSE installed.
+6. Open up Windows Settings - Gaming - Full Screen Experience
+7. Select **Playnite FSE** from the list of available apps (should be underneath xbox) to set it as your default!
 
 ## 🛠️ How It Works (The Technical Details)
 
