@@ -19,15 +19,21 @@ Because this tool uses custom system-level capabilities, it is distributed as a 
 2. Extract the `.zip` file to a folder on your device.
 3. Open the extracted folder, right-click on the **`Install.ps1`** file, and select **Run with PowerShell**.
 4. Windows will ask for administrator permission to install the developer certificate. Type `Y` and hit **Enter** when prompted.
-5. Once the installation script finishes successfully, check your start menu and you should see PlayniteFSE installed.
-6. Open up Windows Settings - Gaming - Full Screen Experience
-7. Select **Playnite FSE** from the list of available apps (should be underneath xbox) to set it as your default!
+5. Once the installation script finishes successfully, check your Start menu and you should see Playnite FSE installed.
+6. Open **Windows Settings > Gaming > Full Screen Experience**.
+7. Select **Playnite FSE** from the list of available apps (it should be underneath Xbox) to set it as your default!
 
 ## 🛠️ How It Works (The Technical Details)
 
-Standard workarounds for launching Playnite via the Xbox FSE menu (like basic UWP bridges or standard shortcut scripts) fail because Windows FSE operates as a highly restricted sandbox. FSE acts like a console dashboard and actively suppresses unauthorized Win32 background processes from stealing window focus.
+Historically, replacing the FSE dashboard required messy workarounds—like letting the official Xbox app load and then forcefully terminating its background process to wrestle window focus back to Playnite. Furthermore, no community app has previously been able to successfully populate inside the official Windows Settings dropdown.
 
-This launcher bypasses that sandbox natively:
-* **The VIP Pass (.SCCD):** The app is packaged with a Custom Capability Descriptor (`.SCCD`) file that explicitly claims the `Microsoft.appCategory.gamingHome_8wekyb3d8bbwe` restricted capability. 
-* **Native Win32 Execution:** Because the package holds this authorized "VIP Pass," Windows FSE recognizes it as a legitimate gaming shell. When executed, it natively runs a lean .NET 4.8 process that triggers `Playnite.FullscreenApp.exe` via `Process.Start()`. 
-* **Zero Suppression:** Playnite inherits the foreground privileges of the authorized shell, taking over the screen immediately without being blocked by the OS.
+This launcher changes that by integrating natively with the OS:
+
+### 1. The Settings Dropdown Integration
+To get the app to appear directly in the `Settings > Gaming > Full Screen Experience` menu alongside the official Xbox app, the launcher is packaged with a strictly formatted `AppxManifest`. By correctly implementing the `windows.gamingApp` extension, Windows natively recognizes the package as a selectable dashboard option.
+
+### 2. Dashboard Privileges (The `.SCCD` File)
+To ensure Windows grants the app the necessary foreground focus without suppressing it in the background, the package includes a Custom Capability Descriptor (`.SCCD`) file. This officially declares the `Microsoft.appCategory.gamingHome_8wekyb3d8bbwe` capability. By declaring this capability via the package manifest, the OS treats the launcher as a native FSE environment.
+
+### 3. The Execution (`Launcher.exe`)
+Once selected in the Windows Settings, the actual execution is incredibly lightweight. The package runs a minimal .NET 4.8 application that simply triggers `Playnite.FullscreenApp.exe` and gracefully exits. Because the initial package holds the correct FSE dashboard capabilities, Playnite inherits that foreground focus and launches flawlessly with zero background overhead.
