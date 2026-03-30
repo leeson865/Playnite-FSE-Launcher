@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM" />
+    <Platform Name="arm64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Launcher/Launcher.csproj" />
+  <Project Path="PlayniteFSE/PlayniteFSE.wapproj" Type="c7167f0d-bc9f-4e6e-afe1-012c56b48db5" Id="e3150d21-d0b4-4032-a77c-2d3350b8e98f">
+    <Platform Solution="*|arm64" Project="ARM64" />
+    <Deploy />
+  </Project>
+</Solution>

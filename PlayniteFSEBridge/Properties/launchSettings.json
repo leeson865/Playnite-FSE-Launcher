@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PlayniteFSEBridge": {
+      "commandName": "MsixPackage",
+      "remoteDebugEnabled": true,
+      "remoteDebugMachine": "192.168.10.108",
+      "authenticationMode": "Universal"
+    }
+  }
+}
