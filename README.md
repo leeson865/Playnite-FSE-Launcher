@@ -26,6 +26,9 @@ Because this tool uses custom system-level capabilities, it is distributed as a 
 9. Select **Playnite FSE** from the list of available apps (it should be underneath Xbox) to set it as your default!
 10. You can now go back and disable Developer mode, as its only required once to install the app.
 
+## ♻️ How to uninstall 
+Easy! Right click the app in your start menu and select "Uninstall" like you would any other Windows app.
+
 ## 🛠️ How It Works (The Technical Details)
 
 Historically, replacing the FSE dashboard required messy workarounds—like letting the official Xbox app load and then forcefully terminating its background process to wrestle window focus back to Playnite. Furthermore, no community app has previously been able to successfully populate inside the official Windows Settings dropdown.
