@@ -15,14 +15,16 @@ Before installing, ensure your setup meets the following requirements:
 
 Because this tool uses custom system-level capabilities, it is distributed as a Sideloaded MSIX package. The included Microsoft script will automatically trust the local developer certificate and install the app.
 
-1. Go to the **[Releases](../../releases)** page and download the latest `PlayniteFSE_v1.0.zip`.
-2. Extract the `.zip` file to a folder on your device.
-3. Open the extracted folder, right-click on the **`InstallPlayniteFSE.bat`** file, and select **Run as Administrator**.
-4. Windows will ask for administrator permission to install the developer certificate. Type `Y` and hit **Enter** when prompted.
-5. Windows may warn you about running a script externally. Select `Yes to all` via the command.
-6. Once the installation script finishes successfully, check your Start menu and you should see Playnite FSE installed.
-7. Open **Windows Settings > Gaming > Full Screen Experience**.
-8. Select **Playnite FSE** from the list of available apps (it should be underneath Xbox) to set it as your default!
+1. Go to Settings - System - Advanced in Windows and turn on Developer mode
+2. Go to the **[Releases](../../releases)** page and download the latest `PlayniteFSE_v1.0.zip`.
+3. Extract the `.zip` file to a folder on your device.
+4. Open the extracted folder, right-click on the **`InstallPlayniteFSE.bat`** file, and select **Run as Administrator**.
+5. Windows will ask for administrator permission to install the developer certificate. Type `Y` and hit **Enter** when prompted.
+6. Windows may warn you about running a script externally. Select `Yes to all` via the command.
+7. Once the installation script finishes successfully, check your Start menu and you should see Playnite FSE installed.
+8. Open **Windows Settings > Gaming > Full Screen Experience**.
+9. Select **Playnite FSE** from the list of available apps (it should be underneath Xbox) to set it as your default!
+10. You can now go back and disable Developer mode, as its only required once to install the app.
 
 ## 🛠️ How It Works (The Technical Details)
 
