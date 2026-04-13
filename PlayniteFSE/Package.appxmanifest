@@ -9,12 +9,12 @@
 
 	<Identity
 	  Name="PlayniteFSE"
-	  Publisher="CN=leero"
-	  Version="1.0.0.0" />
+	  Publisher="CN=Leeson865"
+	  Version="1.1.1.0" />
 
 	<Properties>
 		<DisplayName>Playnite FSE</DisplayName>
-		<PublisherDisplayName>leero</PublisherDisplayName>
+		<PublisherDisplayName>Leeson865</PublisherDisplayName>
 		<Logo>Images\StoreLogo.png</Logo>
 	</Properties>
 
